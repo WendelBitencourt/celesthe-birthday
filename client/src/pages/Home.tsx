@@ -426,9 +426,23 @@ export default function Home() {
                     lineHeight: 2,
                     fontStyle: "italic",
                     marginBottom: "1.5rem",
+                    textAlign: "center",
                   }}
                 >
-                  Hoje é um dia para celebrar alguém muito especial — você, Celesthe!
+                  Hoje é o dia de celebrar o aniversário de uma grande sáfica safada!
+                </p>
+
+                                <p
+                  style={{
+                    fontFamily: "'Cormorant Garamond', serif",
+                    fontSize: "clamp(1rem, 2.5vw, 1.15rem)",
+                    color: "#5A3A4A",
+                    lineHeight: 2,
+                    fontStyle: "italic",
+                    marginBottom: "1.5rem",
+                    textAlign: "center",
+                  }}
+                >
                   Como a Taylor Swift uma vez disse, as melhores histórias são aquelas
                   vividas com coragem, amor e muito brilho. E você tem tudo isso.
                 </p>
@@ -441,6 +455,7 @@ export default function Home() {
                     lineHeight: 2,
                     fontStyle: "italic",
                     marginBottom: "1.5rem",
+                    textAlign: "center",
                   }}
                 >
                   Que este novo ano da sua vida seja cheio de músicas que fazem o coração
@@ -455,6 +470,8 @@ export default function Home() {
                     color: "#5A3A4A",
                     lineHeight: 2,
                     fontStyle: "italic",
+                    marginBottom: "1.5rem",
+                    textAlign: "center",
                   }}
                 >
                   Você merece todo o amor do mundo. Feliz aniversário, Swiftie! 💕
@@ -468,6 +485,8 @@ export default function Home() {
                     display: "flex",
                     alignItems: "center",
                     gap: "0.5rem",
+                    justifyContent: "center",
+                    
                   }}
                 >
                   <span style={{ fontSize: "1.5rem", animation: "heartbeat 2s ease-in-out infinite" }}>💖</span>
