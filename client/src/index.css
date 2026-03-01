@@ -4,8 +4,7 @@
 
 @custom-variant dark (&:is(.dark *));
 
-/* Google Fonts — Lover Era Dreamy typography */
-@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Nunito:wght@300;400;500;600;700&display=swap");
+/* Fontes carregadas via index.html — não duplicar aqui */
 
 @theme inline {
   --color-background: hsl(var(--background));

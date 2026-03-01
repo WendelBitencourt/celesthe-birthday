@@ -198,7 +198,7 @@ export default function Home() {
       className="min-h-screen relative"
       style={{
         background: "linear-gradient(160deg, #FFF0F5 0%, #F5EEFF 50%, #EEF5FF 100%)",
-        fontFamily: "'Nunito', sans-serif",
+        fontFamily: "var(--font-sans)",
       }}
     >
       {/* Background layers */}
@@ -239,7 +239,7 @@ export default function Home() {
           >
             <p
               style={{
-                fontFamily: "'Cormorant Garamond', serif",
+                fontFamily: "var(--font-serif)",
                 fontSize: "clamp(1rem, 3vw, 1.4rem)",
                 color: "#9B6EC4",
                 letterSpacing: "0.3em",
@@ -261,7 +261,7 @@ export default function Home() {
             <h1
               className="shimmer-text"
               style={{
-                fontFamily: "'Great Vibes', cursive",
+                fontFamily: "var(--font-display)",
                 fontSize: "clamp(4rem, 14vw, 9rem)",
                 lineHeight: 1.1,
                 marginBottom: "0.5rem",
@@ -291,7 +291,7 @@ export default function Home() {
               <span style={{ fontSize: "1.8rem", animation: "heartbeat 2s ease-in-out infinite" }}>💕</span>
               <p
                 style={{
-                  fontFamily: "'Cormorant Garamond', serif",
+                  fontFamily: "var(--font-serif)",
                   fontSize: "clamp(1.4rem, 5vw, 2.2rem)",
                   color: "#E8829A",
                   fontStyle: "italic",
@@ -306,7 +306,7 @@ export default function Home() {
 
             <p
               style={{
-                fontFamily: "'Nunito', sans-serif",
+                fontFamily: "var(--font-sans)",
                 fontSize: "clamp(1rem, 3vw, 1.2rem)",
                 color: "#7A5A6A",
                 maxWidth: "500px",
@@ -327,7 +327,7 @@ export default function Home() {
                 background: "linear-gradient(135deg, #FFB6C1, #E6CCFF)",
                 color: "#6A3A5A",
                 borderRadius: "50px",
-                fontFamily: "'Nunito', sans-serif",
+                fontFamily: "var(--font-sans)",
                 fontWeight: 700,
                 fontSize: "1rem",
                 textDecoration: "none",
@@ -378,7 +378,7 @@ export default function Home() {
           <RevealSection className="text-center mb-16">
             <h2
               style={{
-                fontFamily: "'Great Vibes', cursive",
+                fontFamily: "var(--font-display)",
                 fontSize: "clamp(2.5rem, 8vw, 5rem)",
                 color: "#E8829A",
                 marginBottom: "0.5rem",
@@ -420,7 +420,7 @@ export default function Home() {
 
                 <p
                   style={{
-                    fontFamily: "'Cormorant Garamond', serif",
+                    fontFamily: "var(--font-serif)",
                     fontSize: "clamp(1rem, 2.5vw, 1.15rem)",
                     color: "#5A3A4A",
                     lineHeight: 2,
@@ -434,7 +434,7 @@ export default function Home() {
 
                                 <p
                   style={{
-                    fontFamily: "'Cormorant Garamond', serif",
+                    fontFamily: "var(--font-serif)",
                     fontSize: "clamp(1rem, 2.5vw, 1.15rem)",
                     color: "#5A3A4A",
                     lineHeight: 2,
@@ -449,7 +449,7 @@ export default function Home() {
 
                 <p
                   style={{
-                    fontFamily: "'Cormorant Garamond', serif",
+                    fontFamily: "var(--font-serif)",
                     fontSize: "clamp(1rem, 2.5vw, 1.15rem)",
                     color: "#5A3A4A",
                     lineHeight: 2,
@@ -465,7 +465,7 @@ export default function Home() {
 
                 <p
                   style={{
-                    fontFamily: "'Cormorant Garamond', serif",
+                    fontFamily: "var(--font-serif)",
                     fontSize: "clamp(1rem, 2.5vw, 1.15rem)",
                     color: "#5A3A4A",
                     lineHeight: 2,
@@ -492,7 +492,7 @@ export default function Home() {
                   <span style={{ fontSize: "1.5rem", animation: "heartbeat 2s ease-in-out infinite" }}>💖</span>
                   <p
                     style={{
-                      fontFamily: "'Great Vibes', cursive",
+                      fontFamily: "var(--font-display)",
                       fontSize: "1.8rem",
                       color: "#E8829A",
                     }}
@@ -518,7 +518,7 @@ export default function Home() {
               style={{
                 fontSize: "5rem",
                 opacity: 0.3,
-                fontFamily: "'Cormorant Garamond', serif",
+                fontFamily: "var(--font-serif)",
                 lineHeight: 1,
                 display: "block",
                 color: "#6A3A5A",
@@ -529,7 +529,7 @@ export default function Home() {
             </span>
             <blockquote
               style={{
-                fontFamily: "'Cormorant Garamond', serif",
+                fontFamily: "var(--font-serif)",
                 fontSize: "clamp(1.4rem, 4vw, 2.2rem)",
                 color: "#4A2A3A",
                 fontStyle: "italic",
@@ -544,7 +544,7 @@ export default function Home() {
               style={{
                 fontSize: "5rem",
                 opacity: 0.3,
-                fontFamily: "'Cormorant Garamond', serif",
+                fontFamily: "var(--font-serif)",
                 lineHeight: 0.5,
                 display: "block",
                 color: "#6A3A5A",
@@ -555,7 +555,7 @@ export default function Home() {
             </span>
             <p
               style={{
-                fontFamily: "'Nunito', sans-serif",
+                fontFamily: "var(--font-sans)",
                 fontSize: "1rem",
                 color: "#6A3A5A",
                 fontWeight: 600,
@@ -595,7 +595,7 @@ export default function Home() {
           <RevealSection className="text-center mb-16">
             <h2
               style={{
-                fontFamily: "'Great Vibes', cursive",
+                fontFamily: "var(--font-display)",
                 fontSize: "clamp(2.5rem, 8vw, 5rem)",
                 color: "#E8829A",
                 marginBottom: "0.5rem",
@@ -605,7 +605,7 @@ export default function Home() {
             </h2>
             <p
               style={{
-                fontFamily: "'Cormorant Garamond', serif",
+                fontFamily: "var(--font-serif)",
                 fontSize: "1.1rem",
                 color: "#9B6EC4",
                 fontStyle: "italic",
@@ -651,7 +651,7 @@ export default function Home() {
                     <div>
                       <h3
                         style={{
-                          fontFamily: "'Cormorant Garamond', serif",
+                          fontFamily: "var(--font-serif)",
                           fontSize: "1.4rem",
                           fontWeight: 600,
                           color: era.color,
@@ -662,7 +662,7 @@ export default function Home() {
                       </h3>
                       <span
                         style={{
-                          fontFamily: "'Nunito', sans-serif",
+                          fontFamily: "var(--font-sans)",
                           fontSize: "0.75rem",
                           color: `${era.color}99`,
                           fontWeight: 600,
@@ -678,7 +678,7 @@ export default function Home() {
                   {activeEra === i && (
                     <p
                       style={{
-                        fontFamily: "'Cormorant Garamond', serif",
+                        fontFamily: "var(--font-serif)",
                         fontSize: "0.95rem",
                         color: "#4A3A4A",
                         fontStyle: "italic",
@@ -696,7 +696,7 @@ export default function Home() {
                   {activeEra !== i && (
                     <p
                       style={{
-                        fontFamily: "'Nunito', sans-serif",
+                        fontFamily: "var(--font-sans)",
                         fontSize: "0.8rem",
                         color: `${era.color}80`,
                         marginTop: "0.5rem",
@@ -741,7 +741,7 @@ export default function Home() {
 
               <h2
                 style={{
-                  fontFamily: "'Great Vibes', cursive",
+                  fontFamily: "var(--font-display)",
                   fontSize: "clamp(2.5rem, 8vw, 4.5rem)",
                   marginBottom: "1rem",
                   lineHeight: 1.2,
@@ -754,7 +754,7 @@ export default function Home() {
 
               <p
                 style={{
-                  fontFamily: "'Cormorant Garamond', serif",
+                  fontFamily: "var(--font-serif)",
                   fontSize: "clamp(1.05rem, 2.5vw, 1.2rem)",
                   color: "#5A3A4A",
                   fontStyle: "italic",
@@ -791,7 +791,7 @@ export default function Home() {
 
               <p
                 style={{
-                  fontFamily: "'Great Vibes', cursive",
+                  fontFamily: "var(--font-display)",
                   fontSize: "2.2rem",
                   color: "#9B6EC4",
                 }}
@@ -813,7 +813,7 @@ export default function Home() {
       >
         <p
           style={{
-            fontFamily: "'Cormorant Garamond', serif",
+            fontFamily: "var(--font-serif)",
             fontSize: "1rem",
             color: "#4A2A3A",
             fontStyle: "italic",
