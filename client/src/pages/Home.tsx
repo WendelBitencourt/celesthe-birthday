@@ -820,7 +820,7 @@ export default function Home() {
             opacity: 0.8,
           }}
         >
-          Feito com 💕 e muito amor · Inspirado na magia da Taylor Swift
+          Feito com 💕 e muito amor · Inspirado na magia da Loirinha 
         </p>
         <div style={{ marginTop: "0.5rem", display: "flex", justifyContent: "center", gap: "8px" }}>
           {["✨", "💕", "🎵", "💕", "✨"].map((e, i) => (
