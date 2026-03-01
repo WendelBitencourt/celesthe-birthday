@@ -43,7 +43,10 @@
   --radius-md: calc(var(--radius) - 2px);
   --radius-lg: var(--radius);
   --radius-xl: calc(var(--radius) + 4px);
+}
 
+/* Fontes em @theme (não inline) para gerar CSS custom properties acessíveis via var() */
+@theme {
   --font-sans: "Nunito", ui-sans-serif, system-ui, sans-serif;
   --font-serif: "Cormorant Garamond", ui-serif, Georgia, serif;
   --font-display: "Great Vibes", cursive;
