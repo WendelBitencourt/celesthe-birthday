@@ -199,6 +199,7 @@ export default function Home() {
       style={{
         background: "linear-gradient(160deg, #FFF0F5 0%, #F5EEFF 50%, #EEF5FF 100%)",
         fontFamily: "var(--font-sans)",
+        overflowX: "hidden",
       }}
     >
       {/* Background layers */}
@@ -223,14 +224,14 @@ export default function Home() {
           }}
         />
 
-        {/* Musical notes decoration */}
-        <MusicalNote style={{ top: "15%", left: "8%", fontSize: "2rem", animation: "float 5s ease-in-out infinite" }} />
-        <MusicalNote style={{ top: "25%", right: "10%", fontSize: "1.6rem", animation: "float 4s ease-in-out 1s infinite" }} />
-        <MusicalNote style={{ top: "60%", left: "5%", fontSize: "1.2rem", animation: "float 6s ease-in-out 2s infinite" }} />
-        <MusicalNote style={{ bottom: "20%", right: "8%", fontSize: "1.8rem", animation: "float 4.5s ease-in-out 0.5s infinite" }} />
+        {/* Musical notes decoration - hidden on small screens via CSS */}
+        <MusicalNote style={{ top: "15%", left: "8%", fontSize: "2rem", animation: "float 5s ease-in-out infinite", display: "var(--note-display, none)" }} />
+        <MusicalNote style={{ top: "25%", right: "10%", fontSize: "1.6rem", animation: "float 4s ease-in-out 1s infinite", display: "var(--note-display, none)" }} />
+        <MusicalNote style={{ top: "60%", left: "5%", fontSize: "1.2rem", animation: "float 6s ease-in-out 2s infinite", display: "var(--note-display, none)" }} />
+        <MusicalNote style={{ bottom: "20%", right: "8%", fontSize: "1.8rem", animation: "float 4.5s ease-in-out 0.5s infinite", display: "var(--note-display, none)" }} />
 
         {/* Hero content */}
-        <div className="relative z-10 text-center px-6 max-w-3xl mx-auto">
+        <div className="relative z-10 text-center px-4 sm:px-6 max-w-3xl mx-auto w-full">
           <div
             style={{
               opacity: 0,
@@ -240,12 +241,13 @@ export default function Home() {
             <p
               style={{
                 fontFamily: "var(--font-serif)",
-                fontSize: "clamp(1rem, 3vw, 1.4rem)",
+                fontSize: "clamp(0.85rem, 2.5vw, 1.4rem)",
                 color: "#9B6EC4",
-                letterSpacing: "0.3em",
+                letterSpacing: "0.2em",
                 textTransform: "uppercase",
                 marginBottom: "0.5rem",
                 fontStyle: "italic",
+                wordBreak: "break-word",
               }}
             >
               
@@ -262,10 +264,12 @@ export default function Home() {
               className="shimmer-text"
               style={{
                 fontFamily: "var(--font-display)",
-                fontSize: "clamp(4rem, 14vw, 9rem)",
+                fontSize: "clamp(3rem, 12vw, 9rem)",
                 lineHeight: 1.1,
                 marginBottom: "0.5rem",
                 filter: "drop-shadow(0 4px 20px rgba(232,130,154,0.3))",
+                wordBreak: "break-word",
+                overflowWrap: "break-word",
               }}
             >
               Celesthe
@@ -283,35 +287,39 @@ export default function Home() {
                 display: "flex",
                 alignItems: "center",
                 justifyContent: "center",
-                gap: "1rem",
+                gap: "0.5rem",
                 marginBottom: "1.5rem",
+                flexWrap: "wrap",
               }}
             >
-              <div style={{ height: "1px", width: "60px", background: "linear-gradient(90deg, transparent, #E8829A)" }} />
-              <span style={{ fontSize: "1.8rem", animation: "heartbeat 2s ease-in-out infinite" }}>💕</span>
+              <div style={{ height: "1px", width: "40px", maxWidth: "15vw", background: "linear-gradient(90deg, transparent, #E8829A)", flexShrink: 0 }} />
+              <span style={{ fontSize: "1.5rem", animation: "heartbeat 2s ease-in-out infinite", flexShrink: 0 }}>💕</span>
               <p
                 style={{
                   fontFamily: "var(--font-serif)",
-                  fontSize: "clamp(1.4rem, 5vw, 2.2rem)",
+                  fontSize: "clamp(1.1rem, 4vw, 2.2rem)",
                   color: "#E8829A",
                   fontStyle: "italic",
                   fontWeight: 500,
+                  margin: 0,
+                  whiteSpace: "nowrap",
                 }}
               >
                 Feliz Aniversário!
               </p>
-              <span style={{ fontSize: "1.8rem", animation: "heartbeat 2s ease-in-out 0.3s infinite" }}>💕</span>
-              <div style={{ height: "1px", width: "60px", background: "linear-gradient(90deg, #E8829A, transparent)" }} />
+              <span style={{ fontSize: "1.5rem", animation: "heartbeat 2s ease-in-out 0.3s infinite", flexShrink: 0 }}>💕</span>
+              <div style={{ height: "1px", width: "40px", maxWidth: "15vw", background: "linear-gradient(90deg, #E8829A, transparent)", flexShrink: 0 }} />
             </div>
 
             <p
               style={{
                 fontFamily: "var(--font-sans)",
-                fontSize: "clamp(1rem, 3vw, 1.2rem)",
+                fontSize: "clamp(0.9rem, 2.5vw, 1.2rem)",
                 color: "#7A5A6A",
                 maxWidth: "500px",
                 margin: "0 auto 2.5rem",
                 lineHeight: 1.8,
+                padding: "0 0.5rem",
               }}
             >
               "You belong with the birthday cake 🎂
@@ -323,17 +331,18 @@ export default function Home() {
                 display: "inline-flex",
                 alignItems: "center",
                 gap: "0.5rem",
-                padding: "0.9rem 2.5rem",
+                padding: "0.8rem 2rem",
                 background: "linear-gradient(135deg, #FFB6C1, #E6CCFF)",
                 color: "#6A3A5A",
                 borderRadius: "50px",
                 fontFamily: "var(--font-sans)",
                 fontWeight: 700,
-                fontSize: "1rem",
+                fontSize: "clamp(0.85rem, 2.5vw, 1rem)",
                 textDecoration: "none",
                 boxShadow: "0 8px 30px rgba(255,182,193,0.5)",
                 transition: "transform 0.2s, box-shadow 0.2s",
                 animation: "glowPulse 3s ease-in-out infinite",
+                maxWidth: "90vw",
               }}
               onMouseEnter={(e) => {
                 (e.currentTarget as HTMLAnchorElement).style.transform = "translateY(-3px) scale(1.03)";

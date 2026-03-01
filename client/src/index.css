@@ -123,6 +123,13 @@
   --sidebar-ring: 217.2 91.2% 59.8%;
 }
 
+/* Notas musicais visíveis apenas em telas maiores */
+@media (min-width: 640px) {
+  :root {
+    --note-display: block;
+  }
+}
+
 /* ===== Animações do projeto ===== */
 
 @keyframes confettiFall {
